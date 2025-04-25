@@ -101,6 +101,7 @@ This application is a RESTful API for managing a book collection. It allows user
 - express-rate-limit
 
 ### Application Architecture / 应用架构
+```
 .
 ├── API-collection.json
 ├── README.md
@@ -118,11 +119,12 @@ This application is a RESTful API for managing a book collection. It allows user
     └── routes
         ├── index.js
         └── ...
+```
 
 ### Installation / 安装步骤
 
 ```bash
-git clone https://github.com/your-username/mybook-api.git
-cd mybook-api
+git clone https://github.com/Zwy0v0/book-api-server
+cd book-api-server
 npm install
 npm start 
