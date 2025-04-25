@@ -1,0 +1,748 @@
+{
+  "v": 6,
+  "name": "API-collection",
+  "folders": [
+    {
+      "v": 6,
+      "name": "Login",
+      "folders": [],
+      "requests": [
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/login",
+          "name": "login",
+          "params": [],
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "\tapplication/json",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "method": "POST",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": "application/json",
+            "body": "{ \n  \"name\":\"admin\",\n  \"password\":\"admin\"\n\n}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/login",
+          "name": "login by user",
+          "params": [],
+          "headers": [],
+          "method": "POST",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": "application/json",
+            "body": "{ \n  \"name\":\"user\",\n  \"password\":\"user\"\n\n}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "_ref_id": "coll_m9wa5oiu_be959fc3-cfc1-46ac-8c3c-133c04de22b0"
+    },
+    {
+      "v": 6,
+      "name": "books",
+      "folders": [],
+      "requests": [
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/books",
+          "name": "getAll",
+          "params": [],
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "\tapplication/json",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "method": "GET",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDIxOTk3YzM4OGRjZDY0ZjcyZDU2ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NTU1NDk2NywiZXhwIjoxNzQ1NTU4NTY3fQ.n5AGBUAPLphI5wxDG25wZoZsZgHW1cI8gDnSZlhUwZE"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \n}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/books/6809cd8c1409d10b59b9206d",
+          "name": "getById",
+          "params": [],
+          "headers": [],
+          "method": "GET",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDIxOTk3YzM4OGRjZDY0ZjcyZDU2ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NTU1NDk2NywiZXhwIjoxNzQ1NTU4NTY3fQ.n5AGBUAPLphI5wxDG25wZoZsZgHW1cI8gDnSZlhUwZE"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/books/6809cd8c1409d10b59b9206d",
+          "name": "delete",
+          "params": [],
+          "headers": [],
+          "method": "DELETE",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDIxOTk3YzM4OGRjZDY0ZjcyZDU2ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NTU1NDk2NywiZXhwIjoxNzQ1NTU4NTY3fQ.n5AGBUAPLphI5wxDG25wZoZsZgHW1cI8gDnSZlhUwZE"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/books",
+          "name": "add",
+          "params": [],
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "\tapplication/json",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "method": "POST",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDIxOTk3YzM4OGRjZDY0ZjcyZDU2ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NTU1NDk2NywiZXhwIjoxNzQ1NTU4NTY3fQ.n5AGBUAPLphI5wxDG25wZoZsZgHW1cI8gDnSZlhUwZE"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"name\": \"new book\",\n  \"author\": \"zzz\",\n  \"category\": \"6806008b2730d3ae717ec8e4\",\n  \"stock\": 9\n}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/books/68030f187c89810f12a1648b",
+          "name": "edit",
+          "params": [],
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "\tapplication/json",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "method": "PUT",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDIxOTk3YzM4OGRjZDY0ZjcyZDU2ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NTU1NDk2NywiZXhwIjoxNzQ1NTU4NTY3fQ.n5AGBUAPLphI5wxDG25wZoZsZgHW1cI8gDnSZlhUwZE"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"name\": \"aab\",\n  \"author\": \"zzz\",\n  \"category\": \"6806008b2730d3ae717ec8e4\",\n  \"stock\": 93\n}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/books/68030f187c89810f12a1648b",
+          "name": "delete by user",
+          "params": [],
+          "headers": [],
+          "method": "DELETE",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDMxMjg2ZWNiNjVjZGNjNjQ0ZDQyMCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzQ1NTU1MDMxLCJleHAiOjE3NDU1NTg2MzF9.0s0Ohg9NP-ALbRxHpbmW41SJP0w84KsGZSHlftG9TWg"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/books/68030f187c89810f12a1648b",
+          "name": "edit by user",
+          "params": [],
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "\tapplication/json",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "method": "PUT",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDMxMjg2ZWNiNjVjZGNjNjQ0ZDQyMCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzQ1NTU1MDMxLCJleHAiOjE3NDU1NTg2MzF9.0s0Ohg9NP-ALbRxHpbmW41SJP0w84KsGZSHlftG9TWg"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"name\": \"aabc\",\n  \"author\": \"zzz\",\n  \"category\": \"6806008b2730d3ae717ec8e4\",\n  \"stock\": 931\n}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "_ref_id": "coll_m9wag2gr_26fca297-ba71-41d6-8ef5-e21b7ef9b029"
+    },
+    {
+      "v": 6,
+      "name": "category",
+      "folders": [],
+      "requests": [
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/categories",
+          "name": "getAll",
+          "params": [],
+          "headers": [],
+          "method": "GET",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDIxOTk3YzM4OGRjZDY0ZjcyZDU2ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NTU1NDk2NywiZXhwIjoxNzQ1NTU4NTY3fQ.n5AGBUAPLphI5wxDG25wZoZsZgHW1cI8gDnSZlhUwZE"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": "application/json",
+            "body": ""
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/categories/6809d3cf1409d10b59b9228f",
+          "name": "getById",
+          "params": [],
+          "headers": [],
+          "method": "GET",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDIxOTk3YzM4OGRjZDY0ZjcyZDU2ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NTU1NDk2NywiZXhwIjoxNzQ1NTU4NTY3fQ.n5AGBUAPLphI5wxDG25wZoZsZgHW1cI8gDnSZlhUwZE"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/categories/6809d3cf1409d10b59b9228f",
+          "name": "delete",
+          "params": [],
+          "headers": [],
+          "method": "DELETE",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDIxOTk3YzM4OGRjZDY0ZjcyZDU2ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NTU1NDk2NywiZXhwIjoxNzQ1NTU4NTY3fQ.n5AGBUAPLphI5wxDG25wZoZsZgHW1cI8gDnSZlhUwZE"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/categories",
+          "name": "add",
+          "params": [],
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "\tapplication/json",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "method": "POST",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDIxOTk3YzM4OGRjZDY0ZjcyZDU2ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NTU1NDk2NywiZXhwIjoxNzQ1NTU4NTY3fQ.n5AGBUAPLphI5wxDG25wZoZsZgHW1cI8gDnSZlhUwZE"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"name\": \"name\",\n  \"level\":1\n}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/categories",
+          "name": "Repeatedly adding",
+          "params": [],
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "\tapplication/json",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "method": "POST",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDIxOTk3YzM4OGRjZDY0ZjcyZDU2ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NTU1NDk2NywiZXhwIjoxNzQ1NTU4NTY3fQ.n5AGBUAPLphI5wxDG25wZoZsZgHW1cI8gDnSZlhUwZE"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"name\": \"name\",\n  \"level\":1\n}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/categories/6807a5724f24a16bf25f8be3",
+          "name": "edit",
+          "params": [],
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "\tapplication/json",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "method": "PUT",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDIxOTk3YzM4OGRjZDY0ZjcyZDU2ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NTU1NDk2NywiZXhwIjoxNzQ1NTU4NTY3fQ.n5AGBUAPLphI5wxDG25wZoZsZgHW1cI8gDnSZlhUwZE"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"name\": \"1edit\",\n  \"level\":1\n}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "_ref_id": "coll_m9wb95tz_524e00e9-f933-42a0-b55e-9716fcbfe9b6"
+    },
+    {
+      "v": 6,
+      "name": "borrows",
+      "folders": [],
+      "requests": [
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/borrows",
+          "name": "getAll by admin",
+          "params": [],
+          "headers": [],
+          "method": "GET",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDIxOTk3YzM4OGRjZDY0ZjcyZDU2ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NTU1Njk4OSwiZXhwIjoxNzQ1NTYwNTg5fQ.fMCDAswzbeb2enV0qzkJEDEiJAgd1punHIcqraFkpsU"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/borrows",
+          "name": "getAll by user",
+          "params": [],
+          "headers": [],
+          "method": "GET",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDMxMjg2ZWNiNjVjZGNjNjQ0ZDQyMCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzQ1NTU1MDMxLCJleHAiOjE3NDU1NTg2MzF9.0s0Ohg9NP-ALbRxHpbmW41SJP0w84KsGZSHlftG9TWg"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/borrows",
+          "name": "borrow book with stock 0",
+          "params": [],
+          "headers": [],
+          "method": "POST",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDIxOTk3YzM4OGRjZDY0ZjcyZDU2ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NTU1Njk4OSwiZXhwIjoxNzQ1NTYwNTg5fQ.fMCDAswzbeb2enV0qzkJEDEiJAgd1punHIcqraFkpsU"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"book\":\"6809cd931409d10b59b92081\",\n  \"user\":\"68031286ecb65cdcc644d420\"\n}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/borrows",
+          "name": "borrow book",
+          "params": [],
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "\tapplication/json",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "method": "POST",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDIxOTk3YzM4OGRjZDY0ZjcyZDU2ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NTU1Njk4OSwiZXhwIjoxNzQ1NTYwNTg5fQ.fMCDAswzbeb2enV0qzkJEDEiJAgd1punHIcqraFkpsU"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"book\":\"6804bfb1aa32a47bf23907e0\",\n  \"user\":\"68031286ecb65cdcc644d420\"\n}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/borrows/680b1b1e6ceddf64366ce806",
+          "name": "get By Id",
+          "params": [],
+          "headers": [],
+          "method": "GET",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDIxOTk3YzM4OGRjZDY0ZjcyZDU2ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NTU1Njk4OSwiZXhwIjoxNzQ1NTYwNTg5fQ.fMCDAswzbeb2enV0qzkJEDEiJAgd1punHIcqraFkpsU"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/borrows/back/680b1b1e6ceddf64366ce806",
+          "name": "return",
+          "params": [],
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "\tapplication/json",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "method": "PUT",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDIxOTk3YzM4OGRjZDY0ZjcyZDU2ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NTU1Njk4OSwiZXhwIjoxNzQ1NTYwNTg5fQ.fMCDAswzbeb2enV0qzkJEDEiJAgd1punHIcqraFkpsU"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": "application/json",
+            "body": "{}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/borrows/back/680b1b1e6ceddf64366ce806",
+          "name": "restitution",
+          "params": [],
+          "headers": [],
+          "method": "PUT",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDIxOTk3YzM4OGRjZDY0ZjcyZDU2ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NTU1Njk4OSwiZXhwIjoxNzQ1NTYwNTg5fQ.fMCDAswzbeb2enV0qzkJEDEiJAgd1punHIcqraFkpsU"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/borrows/680b1b1e6ceddf64366ce806",
+          "name": "delete",
+          "params": [],
+          "headers": [],
+          "method": "DELETE",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDIxOTk3YzM4OGRjZDY0ZjcyZDU2ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NTU1Njk4OSwiZXhwIjoxNzQ1NTYwNTg5fQ.fMCDAswzbeb2enV0qzkJEDEiJAgd1punHIcqraFkpsU"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "_ref_id": "coll_m9wbzndc_51409b06-cee0-4ad7-88a0-926305f24695"
+    },
+    {
+      "v": 6,
+      "name": "users",
+      "folders": [],
+      "requests": [
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/users",
+          "name": "getAll",
+          "params": [],
+          "headers": [],
+          "method": "GET",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDIxOTk3YzM4OGRjZDY0ZjcyZDU2ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NTU1Njk4OSwiZXhwIjoxNzQ1NTYwNTg5fQ.fMCDAswzbeb2enV0qzkJEDEiJAgd1punHIcqraFkpsU"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/users/6809f096cf55ac4affd87d4d",
+          "name": "getById",
+          "params": [],
+          "headers": [],
+          "method": "GET",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDIxOTk3YzM4OGRjZDY0ZjcyZDU2ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NTU1Njk4OSwiZXhwIjoxNzQ1NTYwNTg5fQ.fMCDAswzbeb2enV0qzkJEDEiJAgd1punHIcqraFkpsU"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/users/6809f096cf55ac4affd87d4d",
+          "name": "edit",
+          "params": [],
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "\tapplication/json",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "method": "PUT",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDIxOTk3YzM4OGRjZDY0ZjcyZDU2ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NTU1Njk4OSwiZXhwIjoxNzQ1NTYwNTg5fQ.fMCDAswzbeb2enV0qzkJEDEiJAgd1punHIcqraFkpsU"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"password\":\"mmmmmm\",\n  \"sex\": \"female\",\n  \"nickName\": \"萌萌\"\n}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/users",
+          "name": "add",
+          "params": [],
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "\tapplication/json",
+              "active": true,
+              "description": ""
+            }
+          ],
+          "method": "POST",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDIxOTk3YzM4OGRjZDY0ZjcyZDU2ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NTU1Njk4OSwiZXhwIjoxNzQ1NTYwNTg5fQ.fMCDAswzbeb2enV0qzkJEDEiJAgd1punHIcqraFkpsU"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"name\": \"ifn666\",\n  \"nickName\":\"IFN666\",\n  \"password\":\"ifn666\",\n  \"sex\":\"female\",\n  \"role\":\"admin\",\n  \"status\":\"normal\"\n}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "endpoint": "https://n11851287.ifn666.com/assessment02/api/users/6809f096cf55ac4affd87d4d",
+          "name": "delete",
+          "params": [],
+          "headers": [],
+          "method": "DELETE",
+          "auth": {
+            "authType": "bearer",
+            "authActive": true,
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDIxOTk3YzM4OGRjZDY0ZjcyZDU2ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NTU1Njk4OSwiZXhwIjoxNzQ1NTYwNTg5fQ.fMCDAswzbeb2enV0qzkJEDEiJAgd1punHIcqraFkpsU"
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "_ref_id": "coll_m9wcr3iy_0c5f2f66-09dd-4901-aaf0-fd59240e0e2c"
+    }
+  ],
+  "requests": [],
+  "headers": [],
+  "auth": {
+    "authType": "none",
+    "authActive": true
+  },
+  "_ref_id": "coll_m9wa4tyo_9ac3575c-3a3b-4431-9274-4a3812936d86"
+}
