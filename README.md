@@ -103,22 +103,33 @@ This application is a RESTful API for managing a book collection. It allows user
 ### Application Architecture / 应用架构
 ```
 .
-├── API-collection.json
-├── README.md
-├── package.json
-├── server.js
-└── src
-    |__ constant.js
-    |
-    ├── controllers
-    │   └── ...
-    ├── middleware
-    │   └── ...
-    ├── models
-    │   └── ...
-    └── routes
-        ├── index.js
-        └── ...
+├── API-collection.json       
+├── package-lock.json         
+├── package.json           
+├── README.md                 
+├── server.js              
+└── src                       
+    ├── constant.js           
+    ├── controllers/         
+    │   ├── bookController.js
+    │   ├── borrowController.js
+    │   ├── catrgoryController.js
+    │   └── userController.js
+    ├── middleware/           
+    │   ├── checkRole.js
+    │   └── validateMongoId.js
+    ├── models/               
+    │   ├── bookModel.js
+    │   ├── borrowModel.js
+    │   ├── categoryModel.js
+    │   └── userModel.js
+    └── routes/              
+        ├── book.js
+        ├── borrow.js
+        ├── category.js
+        ├── login.js
+        ├── logout.js
+        └── user.js
 ```
 
 ### Installation / 安装步骤
